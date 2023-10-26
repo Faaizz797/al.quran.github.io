@@ -53,7 +53,8 @@ function getSurat(){
                     <div class="card-body">
                       <p>${s.nomor}</p>
                       <h3 class="text-end">${s.ar}</h3>
-                      <h3>${s.tr}</h3>
+                      <br>
+                      <h5>${s.tr}</h5>
                       <p>${s.idn}</p>
                     </div>
                   </div>
@@ -70,6 +71,12 @@ function getSurat(){
         // play
         buttonPlay.addEventListener('click', function(){
             audioSurat.play();
+        });
+
+        // pause
+        buttonPause.addEventListener('click', function(){
+
+            audioSurat.pause();
         });
     });
 }

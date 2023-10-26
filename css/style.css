@@ -5,6 +5,11 @@
 .card-surat:hover{
     background-color: #21e6c2d6
 }
-.hidden-button{
-   display: none;
+.navbar-brand{
+    transition: 0.5s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar-brand:hover{
+    scale: 1.1;
+    letter-spacing: 1px;
 }
