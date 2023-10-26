@@ -1,9 +1,13 @@
+body{
+    background-image: url(https://img.freepik.com/free-vector/arabic-pattern-background-islamic-ornament-geometric-3d-shape-texture-arabian-traditional-motif_271628-715.jpg?w=2000&t=st=1698285140~exp=1698285740~hmac=70f5fcc0109f14dc674c348c21e8b7615694c1379fe081d273383318fdab7249);
+    background-size: contain;
+}
 .card-surat{
     cursor: pointer;
     transition: 0.8s;
 }
 .card-surat:hover{
-    background-color: #21e6c2d6
+    box-shadow: 0 0 15px rgba(90, 90, 90, 0.815);
 }
 .navbar-brand{
     transition: 0.5s ease;
