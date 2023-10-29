@@ -24,3 +24,23 @@ function getSurat() {
 }
 
 getSurat();
+
+// Fungsi untuk melakukan pencarian
+function searchSurat() {
+    const input = document.getElementById('surat-search');
+    const filter = input.value.toLowerCase();
+    const cardSurat = document.querySelectorAll('.card-surat');
+  
+    cardSurat.forEach(function (card) {
+      const cardTitle = card.querySelector('.card-title').innerText.toLowerCase();
+      const cardSubtitle = card.querySelector('.card-subtitle').innerText.toLowerCase();
+      if (cardTitle.indexOf(filter) > -1 || cardSubtitle.indexOf(filter) > -1) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+  
+  // Menambahkan event listener untuk memanggil fungsi searchSurat saat input berubah
+  document.getElementById('surat-search').addEventListener('input', searchSurat);
